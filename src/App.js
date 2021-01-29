@@ -41,9 +41,14 @@ class App extends React.Component {
   }
 
   updateNote = (newNote) => {
-    let filteredArr = this.state.notes.filter(note => note.id !== newNote.id)
+    console.log(newNote)
+    let filteredArr = this.state.notes.map(note => {
+      if (note.id === newNote.id){
+        return newNote
+      } else {return note}
+    })
       this.setState({
-        notes: filteredArr.push(newNote)
+        notes: filteredArr
       })
   }
 

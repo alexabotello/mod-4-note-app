@@ -9,17 +9,17 @@ class Nav extends React.Component {
     return (
       <React.Fragment>
       <div>
-        <Link to='/' className='logo'>
+        <Link to='/homepage' className='logo'>
           Flatnote
         </Link>
         <div className='links'>
           <Link to='/newForm'>
             New Note
           </Link>
-
-          <Link to='/login'>
+          
+          <span className='padding1'><Link to='/login'>
             Sign Out
-          </Link>
+          </Link></span>
         </div> 
       </div>
       </React.Fragment>

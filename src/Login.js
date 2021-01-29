@@ -28,10 +28,15 @@ class Login extends React.Component {
 
  render(){
    return (
-   <form onSubmit={this.handleLogin}>
-     <input type='text' value={this.state.username} onChange={this.handleChange}/>
+  <React.Fragment>
+    <div>
+      <h2>Login:</h2>
+    </div>
+   <form className='grid-center' onSubmit={this.handleLogin}>
+     <span className='bold'>Username:</span><br /><input type='text' value={this.state.username} onChange={this.handleChange}/>
      <input type='submit' />
    </form>
+  </React.Fragment>
    )
  }
 }

@@ -86,7 +86,6 @@ textarea {
   border-style: solid;
   border: 2px solid rgb(200, 200, 205);
   padding: 0.8em;
-  display: block;
   width: 50%;
   font-size: 1rem;
 }
@@ -101,14 +100,21 @@ input[type="submit"] {
 
 form [class*=col-6] {
   padding: 5px;
+  margin-top: 5rem;
+  display: block;
+  text-align: right;
 }
 
 body {
   background-image: url('images/bgimage.jpg');
-  font-size: 18px;
+  font-size: 22px;
   font-family: 'Raleway', sans-serif;
 }
 
 .bold {
   font-weight: bold;
+}
+
+.padding1 {
+  padding-left: 1rem;
 }

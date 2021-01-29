@@ -33,17 +33,19 @@ class NewForm extends React.Component {
 
   render(){
     return (
-      <React.Fragment>
+    <React.Fragment>
+      <div>
       <h2>
         New Note:
       </h2>
-      <form className='grid-center' onSubmit={this.handleSubmit}>
-          <input name='note' placeholder='title' value={this.props.title} onChange={this.handleChange}/>
-          <input name='content' placeholder='content' value={this.props.content} onChange={this.handleChange}/>
-          <br/>
-          <button type='submit'>Submit</button>
-      </form>
-      </React.Fragment>
+      </div>
+        <form className='grid-center' onSubmit={this.handleSubmit}>
+            <input name='note' placeholder='title' value={this.props.title} onChange={this.handleChange}/>
+            <input name='content' placeholder='content' value={this.props.content} onChange={this.handleChange}/>
+            <br/>
+            <button type='submit'>Submit</button>
+        </form>
+    </React.Fragment>
     )
   }
 }

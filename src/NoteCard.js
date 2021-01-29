@@ -27,6 +27,7 @@ class NoteCard extends React.Component {
  render(){
    return (
      <React.Fragment>
+       <section>
         <div>
           <span className='bold'>Title:</span> {this.props.note}
           <br/>
@@ -43,6 +44,7 @@ class NoteCard extends React.Component {
             Remove
           </button>
         </div>
+        </section>
       </React.Fragment>
    )
  }

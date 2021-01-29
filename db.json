@@ -16,9 +16,29 @@
       "content": "This is a note about nothing."
     },
     {
-      "note": "this is a new note",
-      "content": "this is a new note",
+      "note": "Note",
+      "content": "This is a new note!",
       "id": 4
+    },
+    {
+      "note": "Travel List 2021",
+      "content": "Oaxaca, Maldives, Turkey, New Zealand, Bali",
+      "id": 5
+    },
+    {
+      "note": "new note test",
+      "content": "new note test",
+      "id": 6
+    },
+    {
+      "note": "new note test",
+      "content": "new note test",
+      "id": 7
+    },
+    {
+      "note": "alexa",
+      "content": "botello",
+      "id": 8
     }
   ]
 }

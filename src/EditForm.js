@@ -5,7 +5,8 @@ class EditForm extends React.Component {
  
     state = {
           note: this.props.showNote.note,
-          content: this.props.showNote.content
+          content: this.props.showNote.content,
+          id: this.props.showNote.id
     }
 
     handleUpdate= (e) => {
@@ -16,26 +17,25 @@ class EditForm extends React.Component {
     
     handleSubmit= (e) => {
         e.preventDefault()
-        this.props.updateNote(this.state)
-        // this.props.history.push('/homepage')
 
-    //     const reqObj = {
-    //       method: 'PATCH',
-    //       headers: {
-    //         'Content-Type': 'application/json'
-    //       },
-    //       body:  JSON.stringify({
-    //         //   title: updateNoteData.title,
-    //         //   content: updateNoteData.content
-    //        })
-    //     }
+        const reqObj = {
+          method: 'PATCH',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body:  JSON.stringify({
+              note: this.state.note,
+              content: this.state.content
+           })
+        }
     
     
-    //     fetch(`http://localhost:3001/notes/${this.props.id}`, reqObj)
-    //     .then(resp => resp.json())
-    //     .then(data => {
-    //       this.props.updateNote(this.props.id)
-    //     })
+        fetch(`http://localhost:3001/notes/${this.state.id}`, reqObj)
+        .then(resp => resp.json())
+        .then(data => {
+          this.props.updateNote(this.state)
+          this.props.history.push('/homepage')
+        })
     }
 
 
@@ -43,11 +43,18 @@ class EditForm extends React.Component {
   render(){
       console.log("editForm:", this.state)
       return(
-        <form onSubmit={this.handleSubmit}>
-        <input name='note' placeholder='note' value={this.state.note} onChange={this.handleUpdate}/>
-        <input name='content' placeholder='content' value={this.state.content} onChange={this.handleUpdate}/>
-         <button type='submit'>Submit</button>
-        </form>
+        <React.Fragment>
+        <div>
+        <h2>
+          Edit Note:
+        </h2>
+        </div>
+          <form className='grid-center' onSubmit={this.handleSubmit}>
+          <input name='note' placeholder='note' value={this.state.note} onChange={this.handleUpdate}/><br/>
+          <input name='content' placeholder='content' value={this.state.content} onChange={this.handleUpdate}/>
+          <button type='submit'>Submit</button>
+          </form>
+        </React.Fragment>
       )
     }
 

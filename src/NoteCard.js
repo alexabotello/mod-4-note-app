@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css';
 import { withRouter } from 'react-router-dom'
 
 class NoteCard extends React.Component {
@@ -27,8 +28,9 @@ class NoteCard extends React.Component {
    return (
      <React.Fragment>
         <div>
-          {this.props.note}
-          {this.props.content}
+          <span className='bold'>Title:</span> {this.props.note}
+          <br/>
+          <span className='bold'>Note:</span> {this.props.content}
         </div>
         <div id={this.props.id}>
          <button onClick={this.handleShow}>

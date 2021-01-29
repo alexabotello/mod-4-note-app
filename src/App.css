@@ -36,3 +36,79 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* FONTS */
+.logo {
+  font-family: 'Abril Fatface', cursive;
+  color: black;
+  font-size: 100px;
+}
+
+.links {
+  font-family: 'Abril Fatface', cursive;
+  color: black;
+  font-size: 20px;
+}
+ 
+a  {
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  color:inherit;
+}
+
+a:hover {
+  color: gray;
+}
+
+h2 {
+  font-family: 'Abril Fatface', cursive;
+}
+
+button {
+  text-decoration: none;
+    color: black;
+    border: 2px solid;
+    padding: 0.6rem 2rem;
+    margin: .5rem;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+button:hover {
+  color: gray;
+  }
+
+input,
+textarea {
+  border-style: solid;
+  border: 2px solid rgb(200, 200, 205);
+  padding: 0.8em;
+  display: block;
+  width: 50%;
+  font-size: 1rem;
+}
+
+textarea {
+  min-height: 7em;
+}
+
+input[type="submit"] {
+  display: block;
+}
+
+form [class*=col-6] {
+  padding: 5px;
+}
+
+body {
+  background-image: url('images/bgimage.jpg');
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.bold {
+  font-weight: bold;
+}

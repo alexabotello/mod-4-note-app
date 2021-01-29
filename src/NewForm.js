@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { Fragment } from 'react';
+import './App.css'
 
 class NewForm extends React.Component {
 
@@ -31,13 +32,18 @@ class NewForm extends React.Component {
   }
 
   render(){
-
     return (
-      <form onSubmit={this.handleSubmit}>
+      <React.Fragment>
+      <h2>
+        New Note:
+      </h2>
+      <form className='grid-center' onSubmit={this.handleSubmit}>
           <input name='note' placeholder='title' value={this.props.title} onChange={this.handleChange}/>
           <input name='content' placeholder='content' value={this.props.content} onChange={this.handleChange}/>
+          <br/>
           <button type='submit'>Submit</button>
       </form>
+      </React.Fragment>
     )
   }
 }

@@ -11,13 +11,8 @@
       "content": "This is a note about nothing."
     },
     {
-      "id": 3,
-      "note": "Test",
-      "content": "This is a note about nothing."
-    },
-    {
       "note": "Note",
-      "content": "This is a new note!",
+      "content": "This is a new note!!",
       "id": 4
     },
     {
@@ -29,16 +24,6 @@
       "note": "new note test",
       "content": "new note test",
       "id": 6
-    },
-    {
-      "note": "new note test",
-      "content": "new note test",
-      "id": 7
-    },
-    {
-      "note": "alexa",
-      "content": "botello",
-      "id": 8
     }
   ]
 }

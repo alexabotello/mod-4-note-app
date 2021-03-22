@@ -1,9 +1,6 @@
-# README
+# FlatNote
 
-[DEMO](https://www.youtube.com/watch?v=gCCV0sJjzZk)
-
-## Flatnote
-- A Javascript web app that allows the User to take notes and edit them.
+A Javascript web app that allows the User to take notes and edit them.
 
 ![homepage](src/images/app.png "Homepage")
 
@@ -12,6 +9,8 @@
 - User can keep a collection of notes
 - Full CRUD capabilities
     -User can view, edit, and delete their notes
+
+    [DEMO](https://www.youtube.com/watch?v=gCCV0sJjzZk)
 
 ![notepage](src/images/newnote.png "New Note")
 
@@ -27,3 +26,19 @@
 - run `json-server --watch db.json` on additional terminal
 - run `npm install` 
 - run `npm start`
+
+## Future Implementations 
+- Ability to categorize notes 
+- Ability to filter notes 
+
+## Challenges 
+
+The most challenging part was getting all of the routing properly done at the beginning. Once knowing what props were to be passed down where, it was seamless and quick after that. 
+
+## Contributors 
+
+- Derick Castillo 
+- Raza Jafri 
+
+
+
